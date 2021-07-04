@@ -28,7 +28,7 @@ function App() {
 
   useEffect(() => {
     const fetchApi = async () => {
-      const url = `http://api.openweathermap.org/data/2.5/weather?q=${query}&appid=5c44f268198d1bbcdeb4483bb819d62c`;
+      const url = `https://api.openweathermap.org/data/2.5/weather?q=${query}&appid=5c44f268198d1bbcdeb4483bb819d62c`;
       const response = await fetch(url);
       const jsonResponse = await response.json();
       //console.log(jsonResponse);
@@ -60,7 +60,7 @@ function App() {
 
   useEffect(() => {
     const fetchApi = async () => {
-      const url = `http://api.openweathermap.org/data/2.5/air_pollution?lat=${coordinates.latt}&lon=${coordinates.lonn}&appid=5c44f268198d1bbcdeb4483bb819d62c`;
+      const url = `https://api.openweathermap.org/data/2.5/air_pollution?lat=${coordinates.latt}&lon=${coordinates.lonn}&appid=5c44f268198d1bbcdeb4483bb819d62c`;
       const response1 = await fetch(url);
       const jsonResponse1 = await response1.json();
       //console.log(jsonResponse1);
